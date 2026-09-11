@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#241c17">
+<title>پدرام ♥ زهرا | دعوت‌نامه عروسی</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600&family=Marhey:wght@400;500&display=swap');
+:root{
+ --bg:#efe4d6;--paper:#f8f0e6;--ink:#3c2b20;--muted:#8b7562;
+ --gold:#9a7651;--line:#d7c4b0;--dark:#211813;--shadow:0 25px 70px #2b1c1026;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#d8c5b1;color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif}
+body.locked{overflow:hidden}
+.site{max-width:560px;margin:auto;background:var(--paper);overflow:hidden;box-shadow:0 0 70px #24170f33}
+section{position:relative;min-height:100svh;padding:72px 24px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;overflow:hidden}
+.cover{
+ min-height:100svh;color:#4a3526;
+ background:
+ radial-gradient(circle at 50% 49%,#ffffff55 0 13%,transparent 13.5%),
+ linear-gradient(90deg,#f4e9dc 0 49.5%,#e9dccd 50%,#f4e9dc 50.5%),
+ linear-gradient(#fff6ec,#e9dccd);
+ cursor:pointer;user-select:none;
+}
+.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.6%,#bda99322 50%,transparent 50.4%);pointer-events:none}
+.cover:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,#fff6 0 25%,transparent 65%);pointer-events:none}
+.paper-grain{position:absolute;inset:0;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+.bow{position:absolute;top:50%;left:50%;width:100%;height:230px;transform:translate(-50%,-50%)}
+.ribbon{position:absolute;top:50%;width:58%;height:105px;border:6px solid #9c7957;border-radius:50%;opacity:.9}
+.ribbon.left{right:47%;transform:translateY(-50%) rotate(8deg)}
+.ribbon.right{left:47%;transform:translateY(-50%) rotate(-8deg)}
+.ribbon2{position:absolute;top:62%;width:44%;height:85px;border:4px solid #b18b67;border-radius:50%}
+.ribbon2.left{right:49%;transform:rotate(12deg)}
+.ribbon2.right{left:49%;transform:rotate(-12deg)}
+.seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:132px;height:132px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c19b70,#85603f);border:7px double #6f4c31;box-shadow:0 8px 25px #2b1b102b;color:#f4e4d2;display:flex;align-items:center;justify-content:center;font-family:Marhey,serif;font-size:28px;letter-spacing:2px}
+.names{position:absolute;top:calc(50% - 29px);width:100%;display:flex;justify-content:space-between;padding:0 28px;font-family:Marhey,serif;font-size:24px;z-index:2}
+.names span{min-width:100px}
+.cover-hint{position:absolute;bottom:8%;font-size:13px;color:#8c7560;letter-spacing:.2px;animation:pulse 2.8s infinite}
+@keyframes pulse{0%,100%{opacity:.35;transform:translateY(0)}50%{opacity:.85;transform:translateY(-5px)}}
+.opening .ribbon.left{animation:bowLeft 1.25s cubic-bezier(.2,.8,.2,1) forwards}
+.opening .ribbon.right{animation:bowRight 1.25s cubic-bezier(.2,.8,.2,1) forwards}
+.opening .ribbon2.left{animation:bow2Left 1.1s .05s cubic-bezier(.2,.8,.2,1) forwards}
+.opening .ribbon2.right{animation:bow2Right 1.1s .05s cubic-bezier(.2,.8,.2,1) forwards}
+.opening .seal{animation:sealAway 1.05s .15s cubic-bezier(.2,.8,.2,1) forwards}
+.opening .names{animation:namesAway .8s forwards}
+.opening .cover-hint{opacity:0}
+@keyframes bowLeft{to{right:100%;opacity:0;transform:translateY(-50%) rotate(20deg)}}@keyframes bowRight{to{left:100%;opacity:0;transform:translateY(-50%) rotate(-20deg)}}
+@keyframes bow2Left{to{right:100%;opacity:0}}@keyframes bow2Right{to{left:100%;opacity:0}}
+@keyframes sealAway{to{transform:translate(-50%,-50%) scale(1.35);opacity:0}}
+@keyframes namesAway{to{opacity:0;transform:scale(1.08)}}
+
+.reveal{opacity:0;transform:translateY(36px) scale(.985);filter:blur(5px);transition:opacity 1.1s cubic-bezier(.2,.7,.2,1),transform 1.1s cubic-bezier(.2,.7,.2,1),filter 1.1s ease}
+.reveal.from-left{transform:translateX(-45px) scale(.985);}.reveal.from-right{transform:translateX(45px) scale(.985)}
+.reveal.visible{opacity:1;transform:none;filter:blur(0)}
+.hero{background:linear-gradient(#2b1d1590,#2b1d1590),url('preview.png') center/cover;color:white}
+.hero h1{font-family:Marhey,serif;font-size:44px;font-weight:400;margin:15px 0}
+.hero p{font-size:16px;line-height:2}
+.scroll-arrow{margin-top:35px;font-size:24px;animation:pulse 2s infinite}
+.title{font-family:Marhey,serif;font-size:29px;font-weight:400;margin:8px 0 22px}.orn{color:var(--gold);font-size:22px;margin:8px}
+.text{max-width:440px;line-height:2.35;font-size:16px}.goldline{width:80px;height:1px;background:var(--gold);margin:14px auto 25px}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%;max-width:470px;margin:20px 0}
+.countbox{background:#fffaf4;border:1px solid var(--line);border-radius:16px;padding:13px 4px;box-shadow:0 10px 30px #6a49301a}.num{font-size:28px;font-weight:600}.lbl{font-size:11px;color:var(--muted)}
+.photo-section{padding:60px 18px;background:#f5ebdf}.photo{width:100%;max-width:490px;border-radius:22px;box-shadow:var(--shadow);display:block}
+.gallery{width:100%;display:flex;flex-direction:column;gap:30px;margin-top:20px}.gallery figure{margin:0}.gallery img{width:100%;display:block;border-radius:20px;box-shadow:var(--shadow)}figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+.note{background:linear-gradient(#2b1d15cc,#2b1d15cc),url('gallery3.jpg') center/cover;color:white}.note .text{font-size:20px;line-height:2.5}
+.details{background:#f8f0e6}.detail-row{width:100%;max-width:440px;padding:17px 5px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.detail-row b{font-weight:500}.icon{font-size:22px;color:var(--gold)}
+.btn{border:0;background:#6e5039;color:white;padding:14px 24px;border-radius:30px;font:inherit;cursor:pointer;box-shadow:0 12px 28px #4b34231f;transition:.25s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:active{transform:scale(.97)}
+.map-btn{margin-top:25px}.map-btn small{opacity:.8}
+.rsvp{background:#2b1d16;color:#f8eee2}.rsvp .title{color:#fff}.rsvp .text{color:#eadbca}
+.rsvp-btn{background:#b38b62;color:#21170f;margin-top:20px}
+.footer{min-height:65vh;background:linear-gradient(#f7ede2,#ead8c5)}.footer .title{font-size:35px}
+.music-fab{position:fixed;z-index:50;right:max(18px,calc(50vw - 255px));bottom:20px;width:52px;height:52px;border-radius:50%;border:1px solid #fff5;background:#2b1d16e8;color:#fff;font-size:21px;box-shadow:0 12px 35px #0003;cursor:pointer}
+.music-fab.playing{animation:spinGlow 2s linear infinite}@keyframes spinGlow{to{transform:rotate(360deg)}}
+.modal{position:fixed;inset:0;background:#1e140ec7;z-index:100;display:flex;align-items:flex-end;justify-content:center;padding:0;opacity:0;pointer-events:none;transition:.35s}.modal.show{opacity:1;pointer-events:auto}
+.sheet{width:min(560px,100%);background:#f8f0e6;border-radius:28px 28px 0 0;padding:28px 22px 32px;transform:translateY(40px);transition:.4s;box-shadow:0 -20px 60px #0003}.modal.show .sheet{transform:none}
+.sheet h3{font-family:Marhey,serif;font-weight:400;font-size:24px;margin:0 0 18px}.field{margin:12px 0;text-align:right}.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}.field input,.field select{width:100%;border:1px solid var(--line);background:#fffaf4;border-radius:13px;padding:13px;font:inherit;color:var(--ink);outline:none}.actions{display:flex;gap:10px;margin-top:18px}.actions .btn{flex:1}.close{background:#d8c4b1;color:#402c1f}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);z-index:150;background:#2b1d16;color:#fff;padding:13px 18px;border-radius:14px;opacity:0;pointer-events:none;transition:.3s;text-align:center;width:min(90%,430px);font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:380px){.names{font-size:20px;padding:0 16px}.seal{width:115px;height:115px}.count{gap:5px}.num{font-size:24px}.title{font-size:26px}}
+</style>
+</head>
+<body class="locked">
+<div class="site">
+
+<section id="cover" class="cover">
+ <div class="paper-grain"></div>
+ <div class="bow" aria-hidden="true">
+   <div class="ribbon left"></div><div class="ribbon right"></div>
+   <div class="ribbon2 left"></div><div class="ribbon2 right"></div>
+   <div class="seal">پ ♥ ز</div>
+ </div>
+ <div class="names"><span>زهرا</span><span>پدرام</span></div>
+ <div class="cover-hint">برای گشودن دعوت‌نامه، روی کارت لمس کنید</div>
+</section>
+
+<section class="hero">
+ <div class="reveal"><div class="orn">♥</div><h1>پدرام و زهرا</h1><p>به جشن آغاز زندگی‌مان خوش آمدید</p><div class="scroll-arrow">↓</div></div>
+</section>
+
+<section>
+ <div class="reveal from-right">
+  <div class="orn">✦ ♥ ✦</div><h2 class="title">یک شروع عاشقانه</h2><div class="goldline"></div>
+  <p class="text">گاهی یک اتفاق ساده، آغاز زیباترین فصل زندگی است.<br>
+  ما این شب را با عشق آغاز می‌کنیم و حضور شما را در این لحظه‌ی به‌یادماندنی، گران‌قدر می‌دانیم.</p>
+ </div>
+</section>
+
+<section>
+ <div class="reveal">
+  <div class="orn">♥</div><h2 class="title">تا جشن ما</h2>
+  <div class="count">
+   <div class="countbox"><div class="num" id="days">--</div><div class="lbl">روز</div></div>
+   <div class="countbox"><div class="num" id="hours">--</div><div class="lbl">ساعت</div></div>
+   <div class="countbox"><div class="num" id="mins">--</div><div class="lbl">دقیقه</div></div>
+   <div class="countbox"><div class="num" id="secs">--</div><div class="lbl">ثانیه</div></div>
+  </div>
+  <p class="text">۹ مهر ۱۴۰۵<br>ساعت ۱۹ تا پاسی از شب</p>
+ </div>
+</section>
+
+<section class="photo-section">
+ <div class="reveal from-left">
+  <div class="orn">♥</div><h2 class="title">زهرا</h2>
+  <img class="photo" src="gallery1.jpg" alt="عکس تستی عروس">
+  <p class="text">زیباترین اتفاق زندگی، داشتن کسی‌ست که حضورش خانه‌ی دل آدم را روشن می‌کند.</p>
+ </div>
+</section>
+
+<section class="note">
+ <div class="reveal from-right">
+  <div class="orn">♥</div><h2 class="title">برای تو، زهرا</h2>
+  <p class="text">تو به زندگی من معنای دوباره بخشیدی؛<br>
+  از روزی که آمدی، همه‌چیز رنگ دیگری گرفت.<br>
+  کنار تو، هر روز قشنگ‌تر از دیروز است.<br><br>
+  دوستت دارم<br>پدرام</p>
+ </div>
+</section>
+
+<section class="photo-section">
+ <div class="reveal from-right">
+  <div class="orn">♥</div><h2 class="title">پدرام</h2>
+  <img class="photo" src="gallery2.jpg" alt="عکس تستی داماد">
+  <p class="text">و حالا قرار است این مسیر را، قدم‌به‌قدم و شانه‌به‌شانه، ادامه دهیم.</p>
+ </div>
+</section>
+
+<section class="photo-section">
+ <div class="reveal">
+  <div class="orn">✦</div><h2 class="title">گالری خاطرات</h2>
+  <p class="text">چهار عکس نمونه، به‌صورت عمودی و یکی‌یکی با اسکرول ظاهر می‌شوند.</p>
+  <div class="gallery">
+   <figure><img class="reveal from-left" src="gallery1.jpg" alt="گالری ۱"><figcaption>یک قاب از یک خاطره</figcaption></figure>
+   <figure><img class="reveal from-right" src="gallery2.jpg" alt="گالری ۲"><figcaption>با تو، هر لحظه ماندگار است</figcaption></figure>
+   <figure><img class="reveal from-left" src="gallery3.jpg" alt="گالری ۳"><figcaption>قصه‌ای که ادامه دارد</figcaption></figure>
+   <figure><img class="reveal from-right" src="gallery4.jpg" alt="گالری ۴"><figcaption>بهترین روزهای ما</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="details">
+ <div class="reveal">
+  <div class="orn">♥</div><h2 class="title">جزئیات مراسم</h2>
+  <div class="detail-row"><span class="icon">◷</span><b>۹ مهر ۱۴۰۵ — ساعت ۱۹ تا پاسی از شب</b></div>
+  <div class="detail-row"><span class="icon">⌖</span><b id="venueText">نام تالار مراسم</b></div>
+  <p class="text" style="margin-top:22px">منتظر دیدار گرم شما در شب آغاز زندگی‌مان هستیم.</p>
+  <button class="btn map-btn" id="mapBtn">⌖ مشاهده مکان مراسم</button>
+ </div>
+</section>
+
+<section class="rsvp">
+ <div class="reveal">
+  <div class="orn">♥</div><h2 class="title">حضور شما برای ما ارزشمند است</h2>
+  <p class="text">لطفاً حضور خود را اعلام کنید تا با افتخار میزبان شما باشیم.</p>
+  <button class="btn rsvp-btn" id="rsvpBtn">اعلام حضور در مراسم</button>
+ </div>
+</section>
+
+<section class="footer">
+ <div class="reveal">
+  <div class="orn">✦ ♥ ✦</div><h2 class="title">پدرام و زهرا</h2>
+  <p class="text">این کارت با عشق تقدیم شماست.<br>منتظر دیدارتان هستیم.</p>
+  <div class="orn">♥</div>
+ </div>
+</section>
+</div>
+
+<button class="music-fab" id="musicFab" aria-label="موسیقی">♫</button>
+
+<div class="modal" id="modal">
+ <div class="sheet">
+  <h3>اعلام حضور در مراسم</h3>
+  <div class="field"><label>نام مهمان</label><input id="guestName" placeholder="نام و نام خانوادگی"></div>
+  <div class="field"><label>تعداد مهمان</label><select id="guestCount"><option>۱ نفر</option><option>۲ نفر</option><option>۳ نفر</option><option>۴ نفر</option><option>۵ نفر</option><option>۶ نفر یا بیشتر</option></select></div>
+  <div class="field"><label>وضعیت حضور</label><select id="attendance"><option>شرکت می‌کنم</option><option>متأسفانه نمی‌توانم شرکت کنم</option></select></div>
+  <div class="actions"><button class="btn" id="submitRsvp">ثبت اعلام حضور</button><button class="btn close" id="closeModal">بستن</button></div>
+  <p class="small" style="font-size:11px;color:#8b7562;line-height:1.8;margin-top:13px">برای ارسال واقعی پاسخ‌ها به شما، بعداً می‌توان شماره واتساپ یا سرویس فرم را متصل کرد.</p>
+ </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<audio id="bgAudio" src="background.mp3" loop preload="auto"></audio>
+<audio id="voiceAudio" src="voice.mp3" preload="auto"></audio>
+
+<script>
+// ===================== تنظیمات قابل تغییر =====================
+const CEREMONY = new Date("2026-10-01T19:00:00");
+const VENUE_NAME = "نام تالار مراسم";
+const MAP_URL = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(VENUE_NAME);
+// برای ارسال واتساپی پاسخ‌ها، شماره را با فرمت بین‌المللی وارد کنید؛ مثال: 989xxxxxxxxx
+const RSVP_WHATSAPP = "";
+// =============================================================
+
+document.getElementById("venueText").textContent = VENUE_NAME;
+
+const cover=document.getElementById("cover"), body=document.body;
+const bg=document.getElementById("bgAudio"), voice=document.getElementById("voiceAudio");
+const fab=document.getElementById("musicFab");
+
+async function startMusic(){
+  try{bg.volume=.20; await bg.play(); fab.classList.add("playing");}catch(e){}
+}
+cover.addEventListener("click",()=>{
+  if(cover.classList.contains("opening")) return;
+  cover.classList.add("opening");
+  startMusic();
+  setTimeout(()=>{
+    cover.style.display="none"; body.classList.remove("locked");
+    window.scrollTo({top:0,behavior:"instant"});
+  },1250);
+},{once:true});
+
+fab.addEventListener("click", async()=>{
+  if(voice.paused){
+    try{bg.volume=.20; if(bg.paused) await bg.play(); voice.volume=1; await voice.play(); fab.textContent="❚❚";}
+    catch(e){}
+  }else{voice.pause();fab.textContent="♫";}
+});
+voice.addEventListener("ended",()=>{fab.textContent="♫";});
+
+function countdown(){
+ let d=Math.max(0,CEREMONY-Date.now());
+ let days=Math.floor(d/86400000);d%=86400000;
+ let hours=Math.floor(d/3600000);d%=3600000;
+ let mins=Math.floor(d/60000);d%=60000;
+ let secs=Math.floor(d/1000);
+ document.getElementById("days").textContent=days;
+ document.getElementById("hours").textContent=String(hours).padStart(2,"0");
+ document.getElementById("mins").textContent=String(mins).padStart(2,"0");
+ document.getElementById("secs").textContent=String(secs).padStart(2,"0");
+}
+countdown();setInterval(countdown,1000);
+
+// IntersectionObserver: ورود نرم هنگام پایین رفتن و برگشت دوباره هنگام بالا رفتن
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+   if(e.isIntersecting) e.target.classList.add("visible");
+   else e.target.classList.remove("visible");
+ });
+},{threshold:.14,rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+document.getElementById("mapBtn").addEventListener("click",()=>window.open(MAP_URL,"_blank"));
+
+const modal=document.getElementById("modal");
+document.getElementById("rsvpBtn").onclick=()=>modal.classList.add("show");
+document.getElementById("closeModal").onclick=()=>modal.classList.remove("show");
+modal.addEventListener("click",e=>{if(e.target===modal)modal.classList.remove("show")});
+
+function toast(t){const x=document.getElementById("toast");x.textContent=t;x.classList.add("show");setTimeout(()=>x.classList.remove("show"),3200)}
+document.getElementById("submitRsvp").onclick=()=>{
+ const name=document.getElementById("guestName").value.trim();
+ const count=document.getElementById("guestCount").value;
+ const attendance=document.getElementById("attendance").value;
+ if(!name){toast("لطفاً نام مهمان را وارد کنید.");return}
+ const msg=`اعلام حضور عروسی پدرام و زهرا%0Aنام: ${encodeURIComponent(name)}%0Aتعداد: ${encodeURIComponent(count)}%0Aوضعیت: ${encodeURIComponent(attendance)}`;
+ if(RSVP_WHATSAPP){
+   window.open(`https://wa.me/${RSVP_WHATSAPP}?text=${msg}`,"_blank");
+   modal.classList.remove("show");
+ }else{
+   toast(`اعلام حضور ${name} ثبت شد. برای ارسال واقعی، شماره مقصد را در تنظیمات وارد می‌کنیم.`);
+   modal.classList.remove("show");
+ }
+};
+</script>
+</body>
+</html>
