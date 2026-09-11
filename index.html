@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0908">
+<title>پدرام ♥ زهرا | دعوت‌نامه عروسی</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&display=swap');
+:root{--bg:#0b0908;--ink:#f3eee8;--muted:#aaa29a;--gold:#d7bea0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050403;color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;overflow-x:hidden}
+.site{width:100%;max-width:720px;margin:auto;background:var(--bg);min-height:100vh;box-shadow:0 0 80px #000}
+#cover{position:fixed;inset:0;z-index:100;background:#080706;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform 1.35s cubic-bezier(.7,0,.2,1),opacity .8s;overflow:hidden}
+.cover-photo{position:absolute;inset:0;background:linear-gradient(180deg,#0003,#0009),url('preview.png') center/cover;transform:scale(1.03);filter:saturate(.85)}
+.cover-vignette{position:absolute;inset:0;background:radial-gradient(circle at center,#0000 20%,#000a 100%)}
+.cover-content{position:relative;z-index:2;width:min(92vw,620px);height:100svh;display:flex;align-items:center;justify-content:center}
+.names{display:flex;align-items:center;justify-content:center;gap:20px;width:100%;padding:0 10px}
+.name-side{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,11vw,70px);font-weight:400;color:#fff;letter-spacing:1px;text-shadow:0 3px 20px #000}
+.amp{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold);margin:0 -7px}
+.bow{width:104px;height:64px;position:relative;flex:0 0 auto;filter:drop-shadow(0 7px 12px #0008)}
+.bow:before,.bow:after{content:"";position:absolute;top:10px;width:52px;height:45px;border:1px solid #e4d0b8;background:linear-gradient(145deg,#e5cfb4aa,#7d604888);backdrop-filter:blur(2px)}
+.bow:before{left:0;border-radius:70% 25% 65% 35%;transform:rotate(18deg)}
+.bow:after{right:0;border-radius:25% 70% 35% 65%;transform:rotate(-18deg)}
+.bow i{position:absolute;z-index:2;left:50%;top:24px;width:28px;height:28px;transform:translateX(-50%) rotate(45deg);border:1px solid #ecd7bd;background:#b89a7a}
+.cover-hint{position:absolute;bottom:8vh;left:0;right:0;text-align:center;color:#e9e0d7;font-size:13px;letter-spacing:.5px;animation:pulse 2.2s infinite}
+.cover-hint:after{content:"";display:block;width:1px;height:35px;background:#d8c7b4;margin:12px auto 0;opacity:.7}
+@keyframes pulse{50%{opacity:.45}}
+#cover.open{transform:translateY(-100%);opacity:0;pointer-events:none}
+main{opacity:0;transform:translateY(35px);transition:opacity 1s,transform 1s}.ready main{opacity:1;transform:none}
+section{min-height:100svh;padding:92px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;border-bottom:1px solid #211e1b}
+.hero{background:linear-gradient(#08070655,#080706dd),url('preview.png') center/cover}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(55px,16vw,100px);font-weight:400;line-height:.85;margin:8px 0}.script{font-family:'Cormorant Garamond',serif;font-style:italic;color:#cfc1b2;font-size:22px}.date{font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:2px;margin-top:34px;color:#ddd0c2}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:400;margin:10px 0 25px}.fa-title{font-family:Vazirmatn;font-size:28px}.lead{max-width:570px;color:#c9c0b7;line-height:2.35;font-size:16px}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%;max-width:560px;margin:28px 0}.unit{padding:16px 3px;border-top:1px solid #5a5148;border-bottom:1px solid #332e29}.unit strong{display:block;font:500 40px 'Cormorant Garamond',serif}.unit span{font:11px 'Cormorant Garamond',serif;color:#999;letter-spacing:1.5px}
+.portrait{width:min(72vw,270px);height:min(72vw,270px);object-fit:cover;border-radius:50%;border:1px solid #6a5b4e;box-shadow:0 18px 55px #000b}.person-name{font:400 44px 'Cormorant Garamond',serif;margin:20px 0 4px}.label{font-size:10px;letter-spacing:4px;color:#888}
+.gallery{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:25px}.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;border:1px solid #38322c}
+.voice-card{width:100%;max-width:560px;margin-top:25px;padding:22px;border:1px solid #39322c;border-radius:18px;background:#12100e}.voice-card .tag{font-size:12px;color:#aaa;margin-bottom:10px}.voice-card audio{width:100%}
+.details{width:100%;max-width:560px}.row{display:flex;justify-content:space-between;gap:20px;padding:20px 5px;border-bottom:1px solid #302b27}.row span{color:#8e877f}.btn{margin-top:25px;padding:13px 25px;border:1px solid #8a7764;color:#eee;text-decoration:none;border-radius:30px}
+.reveal{opacity:0;transform:translateY(55px) scale(.97);transition:opacity .9s ease,transform 1s cubic-bezier(.2,.7,.2,1)}.reveal.from-left{transform:translateX(-60px) rotate(-1deg)}.reveal.from-right{transform:translateX(60px) rotate(1deg)}.reveal.show{opacity:1;transform:none}
+.music-toggle{position:fixed;z-index:30;left:16px;bottom:18px;width:50px;height:50px;border-radius:50%;border:1px solid #6d5d50;background:#16120fdd;color:#fff;display:grid;place-items:center;font-size:19px;cursor:pointer;backdrop-filter:blur(8px)}
+.music-toggle.playing{box-shadow:0 0 0 5px #cdb79a18,0 0 25px #cdb79a33}
+.small{font-size:12px;color:#777;line-height:2;margin-top:18px}.footer{min-height:65vh}
+@media(max-width:430px){section{padding:78px 20px}.bow{width:82px;height:55px}.bow:before,.bow:after{width:42px;height:38px}.bow i{width:23px;height:23px;top:21px}.names{gap:10px}.name-side{font-size:40px}.count{gap:3px}.unit strong{font-size:34px}.gallery{gap:8px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="cover" aria-label="برای ورود به دعوت‌نامه لمس کنید">
+  <div class="cover-photo"></div><div class="cover-vignette"></div>
+  <div class="cover-content">
+    <div class="names">
+      <div class="name-side">پدرام</div>
+      <div class="amp">♥</div>
+      <div class="bow"><i></i></div>
+      <div class="amp">♥</div>
+      <div class="name-side">زهرا</div>
+    </div>
+    <div class="cover-hint">برای ورود، تصویر را لمس کنید</div>
+  </div>
+</div>
+
+<audio id="bg" src="background.mp3" loop preload="auto"></audio>
+<audio id="voice" src="voice.mp3" preload="auto"></audio>
+<button class="music-toggle" id="musicToggle" aria-label="پخش موسیقی">♫</button>
+
+<div class="site">
+<main id="main">
+<section class="hero">
+  <div class="reveal"><div class="script">Wedding Invitation</div><h1>پدرام</h1><div class="script">♥</div><h1>زهرا</h1><div class="date">۹ مهر ۱۴۰۵ · ساعت ۱۹ تا پاسی از شب</div></div>
+</section>
+
+<section>
+  <div class="reveal from-left"><div class="section-title">Save the Date</div><p class="lead">یک شب، یک شروع، یک عمر با هم بودن.</p>
+  <div class="count"><div class="unit"><strong id="d">--</strong><span>DAYS</span></div><div class="unit"><strong id="h">--</strong><span>HOURS</span></div><div class="unit"><strong id="m">--</strong><span>MINUTES</span></div><div class="unit"><strong id="s">--</strong><span>SECONDS</span></div></div>
+  <p class="lead">۹ مهر ۱۴۰۵<br>ساعت ۱۹ تا پاسی از شب</p></div>
+</section>
+
+<section>
+  <div class="reveal"><div class="section-title fa-title">به جشن آغاز زندگی‌مان خوش آمدید</div><p class="lead">دو قلب، یک مسیر و یک شروع تازه...<br>با عشق، این شب به‌یادماندنی را در کنار عزیزانمان جشن می‌گیریم.<br>حضور شما، زیباترین خاطره این شب خواهد بود.</p></div>
+</section>
+
+<section>
+  <div class="reveal from-right"><img class="portrait" src="preview.png" alt="عکس نمونه زهرا"><div class="person-name">زهرا</div><div class="label">THE BRIDE</div><p class="lead">برای تو که آمدنت، رنگ تازه‌ای به زندگی‌ام بخشید.</p></div>
+</section>
+
+<section>
+  <div class="reveal from-left"><img class="portrait" src="preview.png" alt="عکس نمونه پدرام"><div class="person-name">پدرام</div><div class="label">THE GROOM</div><p class="lead">کنار تو، هر روز برایم شروع یک قصه تازه است.</p></div>
+</section>
+
+<section>
+  <div class="reveal"><div class="section-title fa-title">صدای ما</div><p class="lead">این بخش برای دکلمه یا پیام صوتی شماست.</p>
+    <div class="voice-card"><div class="tag">دکلمه ♥ با صدای شما</div><audio id="voicePlayer" controls preload="metadata"></audio></div>
+    <p class="small">با زدن پخش، دکلمه همزمان با موسیقی پس‌زمینه پخش می‌شود و صدای آن بلندتر تنظیم شده است.</p>
+  </div>
+</section>
+
+<section>
+  <div class="reveal from-right"><div class="section-title">Photo Gallery</div><div class="gallery"><img src="preview.png" alt="گالری ۱"><img src="preview.png" alt="گالری ۲"><img src="preview.png" alt="گالری ۳"><img src="preview.png" alt="گالری ۴"></div><p class="small">عکس‌ها فعلاً نمونه هستند و می‌توانیم عکس‌های واقعی شما را جایگزین کنیم.</p></div>
+</section>
+
+<section>
+  <div class="reveal from-left"><div class="section-title fa-title">برای تو، زهرا</div><p class="lead" style="font-size:21px;line-height:2.5">هر روز با تو،<br>یک دلیل تازه برای لبخند دارم.<br>و امشب، آغاز رسمی تمام فرداهای ماست.<br><br>دوستت دارم<br>پدرام</p></div>
+</section>
+
+<section>
+  <div class="reveal"><div class="section-title fa-title">جزئیات مراسم</div><div class="details"><div class="row"><span>تاریخ</span><b>۹ مهر ۱۴۰۵</b></div><div class="row"><span>ساعت</span><b>۱۹ تا پاسی از شب</b></div><div class="row"><span>مکان</span><b>محل برگزاری به‌زودی اعلام می‌شود</b></div></div></div>
+</section>
+
+<section class="footer">
+  <div class="reveal"><div class="section-title fa-title">منتظر دیدار شما هستیم</div><p class="lead">با عشق<br><b>پدرام ♥ زهرا</b></p></div>
+</section>
+</main></div>
+
+<script>
+const target=new Date('2026-10-01T19:00:00');
+const pad=x=>String(Math.max(0,x)).padStart(2,'0');
+function tick(){let x=Math.max(0,target-Date.now());let d=Math.floor(x/864e5);x%=864e5;let h=Math.floor(x/36e5);x%=36e5;let m=Math.floor(x/6e4);let s=Math.floor((x%6e4)/1e3);dEl.textContent=d;hEl.textContent=pad(h);mEl.textContent=pad(m);sEl.textContent=pad(s)}
+const dEl=document.querySelector('#d'),hEl=document.querySelector('#h'),mEl=document.querySelector('#m'),sEl=document.querySelector('#s');tick();setInterval(tick,1000);
+
+const cover=document.querySelector('#cover'),bg=document.querySelector('#bg'),voice=document.querySelector('#voice'),vp=document.querySelector('#voicePlayer'),toggle=document.querySelector('#musicToggle');
+let opened=false;
+async function startBg(){bg.volume=.20;try{await bg.play();toggle.classList.add('playing');toggle.textContent='Ⅱ'}catch(e){}}
+cover.addEventListener('click',async()=>{
+ if(opened)return; opened=true;
+ document.body.classList.add('ready'); cover.classList.add('open');
+ await startBg();
+ setTimeout(()=>document.querySelector('.hero').scrollIntoView({behavior:'smooth'}),500);
+});
+toggle.addEventListener('click',async()=>{
+ if(bg.paused){await startBg()}else{bg.pause();toggle.classList.remove('playing');toggle.textContent='♫'}
+});
+vp.addEventListener('play',async()=>{await startBg();voice.volume=1.0});
+vp.addEventListener('pause',()=>{});
+vp.addEventListener('ended',()=>{});
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.16});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
